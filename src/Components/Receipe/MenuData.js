@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Cart from './Cart/Cart';
+
 
  const MenuData = ({menuData, searchText}) => {
 
@@ -17,9 +17,9 @@ import Cart from './Cart/Cart';
 
   return (
             <div className="contentWrapper">
-
                   {
-                      menuData.filter((item)=>{
+                      // eslint-disable-next-line array-callback-return
+                      menuData.filter(item  => {
                         if(searchText){
                           if(item.name.toLowerCase().includes(searchText.toLowerCase()) || item.category.toLowerCase().includes(searchText.toLowerCase())){
                             return true
@@ -50,6 +50,3 @@ import Cart from './Cart/Cart';
 }
 
 export default MenuData;
-
-//<img src={currEle.image} alt="images" className='image' />
-//<h4 className="number">{currEle.id}</h4>
