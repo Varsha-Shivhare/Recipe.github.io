@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Cart/Cart.css';
-import MenuAPI from './MenuAPI';
-import MenuData from './MenuData';
 
 const Navbar = ({filterItem, navItem, setSearchText}) => {
 
